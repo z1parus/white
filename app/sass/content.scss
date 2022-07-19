@@ -1,0 +1,92 @@
+.news-and-articles {
+  margin: 20px 0;
+  @extend %container;
+}
+.news-and-articles__container {
+  display: flex;
+  width: 70%;
+  align-items: center;
+}
+
+.btn-news, .btn-articles {
+  display: inline-block;
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  height: 45px;
+  line-height: 45px;
+  font-size: 20px;
+  color: $greytext;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-news:hover, .btn-articles:hover {
+  background-color: white;
+}
+
+.active-btn {
+  background-color: white;
+  color: $textcolor;
+}
+
+.main-container {
+  @extend %container;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.all-news {
+  width: 70%;
+  height: 475px;
+  margin-right: 20px;
+}
+
+.info-block {
+  width: 100%;
+  height: 475px;
+  background-color: white;
+  box-shadow: 0px 0px 5px 1px $shadow;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.text-time, .topic-small {
+  color: $greytext;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.info-block__title{
+  font-size: 25px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.topic-small{ 
+  a {
+    text-decoration: none; 
+    color: $greytext;
+  }
+}
+.topic-small a:hover {text-decoration: underline;}
+
+.info-block__img {
+  width: 100%;
+  height: 70%;
+  margin: 10px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+
+
+.comunity-and-groups {
+  width: 20%;
+  height: 475px;
+  background-color: white;
+  box-shadow: 0px 0px 5px 1px $shadow;
+}

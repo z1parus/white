@@ -1,0 +1,29 @@
+.header-container {
+  @extend %container;
+  background-color: rgb(0, 0, 0);
+  padding-top: 3.5px;
+  padding-bottom: 3.5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.logo__small {
+  font-size: 24px;
+}
+
+.menu__img {
+  width: 25px;
+  height: 25px;
+  transition: all 0.2s ease;
+}
+.menu__el {margin: 0 10px;}
+.menu__el:hover {
+  .menu__img {transform: scale(1.1);}
+  }
