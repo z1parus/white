@@ -33,7 +33,7 @@
 .main-container {
   @extend %container;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
 }
 
@@ -45,9 +45,10 @@
 
 .info-block {
   width: 100%;
-  height: 475px;
+  height: auto;
+  min-height: 475px;
   background-color: white;
-  box-shadow: 0px 0px 5px 1px $shadow;
+  box-shadow: 0px 1px 5px 1px $shadow;
   margin-bottom: 20px;
   padding: 10px;
 }
@@ -64,6 +65,33 @@
   margin: 5px 0;
 }
 
+.info-block__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.author {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.author__img {
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+  margin-right: 10px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.author__name, .author__img {display: inline-block;}
+.author__name {
+  font-size: 15px;
+  font-weight: 600;
+  color: $greytext;
+}
+
 .topic-small{ 
   a {
     text-decoration: none; 
@@ -74,7 +102,7 @@
 
 .info-block__img {
   width: 100%;
-  height: 70%;
+  height: 290px;
   margin: 10px 0;
   background-position: center;
   background-repeat: no-repeat;
@@ -82,11 +110,82 @@
   border-radius: 5px;
 }
 
+.button-and-symbols {
+  display: flex;
+  align-items: center;
+}
 
+.symbols {
+  cursor: pointer;
+  font-size: 14px;
+  color: $greytext;
+  i{
+    font-size: 14px;
+    margin-left: 5px;
+  }
+}
+.bookmark {
+  width: 15px;
+  height: 15px;
+  opacity: 50%;
+  cursor: pointer;
+}
+
+
+.symbols__el {
+  margin: 0 10px;
+}
+
+//COMUNITY
 
 .comunity-and-groups {
   width: 20%;
-  height: 475px;
-  background-color: white;
-  box-shadow: 0px 0px 5px 1px $shadow;
+  display: flex;
+  flex-direction: column;
+  a {
+    text-decoration: none;
+    color: $greytext;
+  }
 }
+
+.comunity, .groups{
+  width: 100%;
+  min-height: 475px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0px 1px 5px 1px $shadow;
+  margin-bottom: 20px;
+}
+
+.comunity__title, .group__title {
+  margin-bottom: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+}
+
+.comunity__container, .group__container {
+  display: flex;
+  align-items: center;
+}
+
+.comunity__container,  .group__container{
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.comunity__img, .group__img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.comunity__container:hover,  .group__container:hover {
+  .comunity__img, .group__img {
+    box-shadow: 0px 0px 10px black;
+  }
+  color: black;
+}
+
