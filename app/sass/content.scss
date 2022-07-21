@@ -9,6 +9,7 @@
 }
 
 .btn-news, .btn-articles {
+  cursor: pointer;
   display: inline-block;
   flex: 1;
   text-align: center;
@@ -37,7 +38,7 @@
   justify-content: flex-start;
 }
 
-.all-news {
+.all-information {
   width: 70%;
   height: 475px;
   margin-right: 20px;
@@ -134,6 +135,10 @@
 
 .symbols__el {
   margin: 0 10px;
+}
+
+div.article {
+  display: none;
 }
 
 //COMUNITY

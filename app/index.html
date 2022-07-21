@@ -12,15 +12,17 @@
   <!-- HEADER -->
   <header>
     <div class="header-container">
+      <a href="./index.html">
       <div class="logo">
         white<span class="logo__small">:&lt;/code&gt;</span>
       </div>
+      </a>
       <div class="menu">
-        <a class="menu__el" href="" ><img class="menu__img" src="./images/dest/menu/news-img-white.png" alt="Список"></a>
-        <a class="menu__el" href="" ><img class="menu__img" src="./images/dest/menu/articles-img-white.png" alt="Список"></a>
-        <a class="menu__el" href="" ><img class="menu__img" src="./images/dest/menu/qa-img-white.png" alt="Список"></a>
-        <a class="menu__el" href="" ><img class="menu__img" src="./images/dest/menu/community-img-white.png" alt="Список"></a>
-        <a class="menu__el" href="" ><img class="menu__img" src="./images/dest/menu/profile-img-white.png" alt="Список"></a>
+        <a class="menu__el" href="" title="Новости"><img class="menu__img" src="./images/dest/menu/news-img-white.png" alt="Список"></a>
+        <a class="menu__el" href="./articles.html" title="Все статьи"><img class="menu__img" src="./images/dest/menu/articles-img-white.png" alt="Список"></a>
+        <a class="menu__el" href="" title="Вопросы и ответы"><img class="menu__img" src="./images/dest/menu/qa-img-white.png" alt="Список"></a>
+        <a class="menu__el" href="" title="Сообщество"><img class="menu__img" src="./images/dest/menu/community-img-white.png" alt="Список"></a>
+        <a class="menu__el" href="./login.html" title="Личный кабинет"><img class="menu__img" src="./images/dest/menu/profile-img-white.png" alt="Список"></a>
       </div>
     </div>
   </header>
@@ -28,20 +30,24 @@
   <main>
     <div class="news-and-articles">
       <div class="news-and-articles__container">
-      <a class="active-btn btn-news" href="#">Новости</a>
-      <a class="btn-articles" href="./allArticles.html">Статьи</a>
+      <div class="active-btn btn-news">Новости</div>
+      <div class="btn-articles">Статьи</div>
       </div>
     </div>
     <div class="main-container">
-      <div class="all-news">
+      <div class="all-information">
 
-        <div class="info-block">
+      <!-- Смотри на класс class=" news " означает что это новость, class=" article " что это статья. JS работает на этих классах их нельзя удалять. -->
+
+        <div class="info-block news">
           <span class="text-time" id="time">Сегодня в 12:48</span>
-          <h1 class="info-block__title">«Тинькофф» до 1 октября приостановил исходящие SWIFT-переводы</h1>
+          <a href="#"><h1 class="info-block__title">«Тинькофф» до 1 октября приостановил исходящие SWIFT-переводы</h1></a>
+          <a href="#">
           <div class="author">
             <div class="author__img" style="background-image: url('https://i.ytimg.com/vi/Ml4SZWNlZ9I/maxresdefault.jpg')"></div>
             <div class="author__name">zipa161</div>
           </div>
+          </a>
           <span class="topic-small">
             <a href="#">IT-компании</a>,
             <a href="#">Финансы</a>, 
@@ -61,13 +67,15 @@
           </div>
         </div>
 
-        <div class="info-block">
+        <div class="info-block news">
           <span class="text-time" id="time">Сегодня в 12:48</span>
-          <h1 class="info-block__title">«Тинькофф» до 1 октября приостановил исходящие SWIFT-переводы</h1>
+          <a href="#"><h1 class="info-block__title">«Тинькофф» до 1 октября приостановил исходящие SWIFT-переводы</h1></a>
+          <a href="#">
           <div class="author">
             <div class="author__img" style="background-image: url('https://i.ytimg.com/vi/Ml4SZWNlZ9I/maxresdefault.jpg')"></div>
             <div class="author__name">zipa161</div>
           </div>
+          </a>
           <span class="topic-small">
             <a href="#">IT-компании</a>,
             <a href="#">Финансы</a>, 
@@ -87,19 +95,105 @@
           </div>
         </div>
 
-        <div class="info-block">
+        <div class="info-block news">
           <span class="text-time" id="time">Сегодня в 12:48</span>
-          <h1 class="info-block__title">«Тинькофф» до 1 октября приостановил исходящие SWIFT-переводы</h1>
+          <a href="#"><h1 class="info-block__title">«Тинькофф» до 1 октября приостановил исходящие SWIFT-переводы</h1></a>
+          <a href="#">
           <div class="author">
             <div class="author__img" style="background-image: url('https://i.ytimg.com/vi/Ml4SZWNlZ9I/maxresdefault.jpg')"></div>
             <div class="author__name">zipa161</div>
           </div>
+          </a>
           <span class="topic-small">
             <a href="#">IT-компании</a>,
             <a href="#">Финансы</a>, 
             <a href="#">Развитие IT индустрии</a>
           </span>
           <div class="info-block__img" style="background-image: url('https://cdnn21.img.ria.ru/images/152144/45/1521444519_0:157:3084:1892_1920x0_80_0_0_e4007dd1d24c3c3fe211764bb1ff4868.jpg');"></div>
+          <div class="info-block__bottom">
+            <div class="button-and-symbols">
+              <a class="button">Читать далее</a>
+              <div class="symbols">
+                <span class="symbols__el" id="dots">26<i class="fa-solid fa-circle"></i></span>
+                <span class="symbols__el" id="views">26<i class="fa-solid fa-eye"></i></span>
+                <span class="symbols__el" id="сomments">26<i class="fa-solid fa-message"></i></span>
+              </div>
+            </div>
+            <img class="bookmark" src="./images/dest/points/bookmark-img-black.png" alt="Закладка">
+          </div>
+        </div>
+
+        <div class="info-block article">
+          <span class="text-time" id="time">Сегодня в 12:48</span>
+          <a href="#"><h1 class="info-block__title">«Тинькофф» до 1 октября приостановил исходящие SWIFT-переводы</h1></a>
+          <a href="#">
+          <div class="author">
+            <div class="author__img" style="background-image: url('https://i.ytimg.com/vi/Ml4SZWNlZ9I/maxresdefault.jpg')"></div>
+            <div class="author__name">zipa161</div>
+          </div>
+          </a>
+          <span class="topic-small">
+            <a href="#">IT-компании</a>,
+            <a href="#">Финансы</a>, 
+            <a href="#">Развитие IT индустрии</a>
+          </span>
+          <div class="info-block__img" style="background-image: url('https://mvblog.ru/wp-content/uploads/2021/12/ishodnyj-programmnyj-kod-pyedit.jpg');"></div>
+          <div class="info-block__bottom">
+            <div class="button-and-symbols">
+              <a class="button">Читать далее</a>
+              <div class="symbols">
+                <span class="symbols__el" id="dots">26<i class="fa-solid fa-circle"></i></span>
+                <span class="symbols__el" id="views">26<i class="fa-solid fa-eye"></i></span>
+                <span class="symbols__el" id="сomments">26<i class="fa-solid fa-message"></i></span>
+              </div>
+            </div>
+            <img class="bookmark" src="./images/dest/points/bookmark-img-black.png" alt="Закладка">
+          </div>
+        </div>
+
+        <div class="info-block article">
+          <span class="text-time" id="time">Сегодня в 12:48</span>
+          <a href="#"><h1 class="info-block__title">«Тинькофф» до 1 октября приостановил исходящие SWIFT-переводы</h1></a>
+          <a href="#">
+          <div class="author">
+            <div class="author__img" style="background-image: url('https://mvblog.ru/wp-content/uploads/2021/12/ishodnyj-programmnyj-kod-pyedit.jpg')"></div>
+            <div class="author__name">zipa161</div>
+          </div>
+          </a>
+          <span class="topic-small">
+            <a href="#">IT-компании</a>,
+            <a href="#">Финансы</a>, 
+            <a href="#">Развитие IT индустрии</a>
+          </span>
+          <div class="info-block__img" style="background-image: url('http://lifeinjapan.ru/upload/posts/The-Matrix-Rebooted-Featured(1).jpg');"></div>
+          <div class="info-block__bottom">
+            <div class="button-and-symbols">
+              <a class="button">Читать далее</a>
+              <div class="symbols">
+                <span class="symbols__el" id="dots">26<i class="fa-solid fa-circle"></i></span>
+                <span class="symbols__el" id="views">26<i class="fa-solid fa-eye"></i></span>
+                <span class="symbols__el" id="сomments">26<i class="fa-solid fa-message"></i></span>
+              </div>
+            </div>
+            <img class="bookmark" src="./images/dest/points/bookmark-img-black.png" alt="Закладка">
+          </div>
+        </div>
+
+        <div class="info-block article">
+          <span class="text-time" id="time">Сегодня в 12:48</span>
+          <a href="#"><h1 class="info-block__title">«Тинькофф» до 1 октября приостановил исходящие SWIFT-переводы</h1></a>
+          <a href="#">
+          <div class="author">
+            <div class="author__img" style="background-image: url('https://i.ytimg.com/vi/Ml4SZWNlZ9I/maxresdefault.jpg')"></div>
+            <div class="author__name">zipa161</div>
+          </div>
+          </a>
+          <span class="topic-small">
+            <a href="#">IT-компании</a>,
+            <a href="#">Финансы</a>, 
+            <a href="#">Развитие IT индустрии</a>
+          </span>
+          <div class="info-block__img" style="background-image: url('https://mvblog.ru/wp-content/uploads/2021/12/ishodnyj-programmnyj-kod-pyedit.jpg');"></div>
           <div class="info-block__bottom">
             <div class="button-and-symbols">
               <a class="button">Читать далее</a>
@@ -180,5 +274,6 @@
     </div>
   </main>
 
+<script src="./js/app.min.js"></script>
 </body>
 </html>

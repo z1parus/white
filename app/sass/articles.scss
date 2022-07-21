@@ -1,0 +1,100 @@
+.articles-container {
+  @extend %container;
+}
+
+.arrow-up {
+  cursor: pointer;
+  border-radius: 100%;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  right: 50px;
+  top: 50%;
+}
+
+.arrow-up:hover {opacity: 90%;}
+
+.articles-container__header {
+  margin: 50px 0;
+}
+
+.articles-container__header {
+  padding: 10px 20px;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.articles-categories {
+  margin: 20px 0;
+  box-shadow: 0px 1px 5px 1px $shadow;
+  transition: background 0.5s ease-in-out;
+  padding: 10px 20px;
+  background-color: #fff;
+}
+.articles-categories:hover {
+  background-color: black;
+  color: #fff;
+  // .articles-categories__img{box-shadow: 0px 0px 10px black;}
+  // .articles-categories__name{color: rgba($color:  $textcolor, $alpha: .7)}
+}
+
+.articles-container__title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-right: 25px;
+}
+
+.categories-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.articles-categories__img {
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.articles-categories__name {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+//СТИЛИ ДЛЯ ШТУК, КОТОРЫЕ ПОЯВЛЯЮТСЯ ЧЕРЕЗ JS
+.articles-container__second {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.right-column-articles {
+  width: 100%;
+}
+
+#articles-from-JS {
+  display: none;
+  width: 80%;
+  margin-right: 20px;
+}
+
+.articlesss {
+  width: 100%;
+  height: auto;
+  min-height: 475px;
+  background-color: white;
+  box-shadow: 0px 1px 5px 1px $shadow;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.big-logo-categoties {
+  width: 80px;
+  height: 80px;
+}

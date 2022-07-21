@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');;
 @import "vars";
 @import "extends";
 
@@ -7,6 +7,11 @@
   margin: 0;
   outline: none;
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: $textcolor;
 }
 
 body {
@@ -19,3 +24,6 @@ body {
 @import 'header';
 @import 'content';
 @import 'button';
+@import 'articles';
+@import 'login';
+@import 'registration';

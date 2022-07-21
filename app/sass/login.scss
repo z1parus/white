@@ -1,0 +1,131 @@
+.header-login {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85px;
+  background-color: #fff;
+  box-shadow: 0px 1px 5px 1px $shadow;
+}
+
+.logo-black {
+  color: $textcolor;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.autorisation-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.autorisation-block {width: 550px;}
+
+.autorisation-table {
+  margin-top: 150px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 1px $shadow;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  height: 340px;
+  margin-bottom: 50px;
+}
+
+.autorisation-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.label-text  {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.input-login, .input-password {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid rgba($color: $greycolor, $alpha: .5);
+  margin: 10px 0;
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.button-enter, .registration-button {
+  margin-top: 40px;
+  width: 150px;
+  height: 40px;
+  color: $textcolor;
+  background-color: #fff;
+  border-radius: 2px;
+  border: 1px solid $textcolor;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: black;
+    color: #fff;
+  }
+}
+
+.forgot-password {
+  margin-left: 20px;
+  color: $greytext;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  &:hover {
+    color: black;
+  }
+}
+
+.no-account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.no-account__text {
+  font-size: 20px;
+  font-weight: 500;
+  color: $textcolor;
+}
+
+.btn-registration {
+  margin-top: 15px;
+  display: block;
+  border-radius: 2px;
+  background-color: #fff;
+  color: $textcolor;
+  height: 30px;
+  line-height: 30px;
+  white-space: nowrap;
+  text-align: center;
+  width: 100%;
+  border: 1px solid rgba($color: $greycolor, $alpha: .5);
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: black;
+    color: #fff;
+  }
+}
+
+.information-links {
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.information-links__el {
+  margin: 0 10px;
+  color: $greytext;
+  font-weight: 500;
+  &:hover {color: black}
+}
