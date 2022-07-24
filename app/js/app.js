@@ -26,7 +26,6 @@ btnNews.on('click', () => {
 //ARROW UP
 //Нельзя в тупую сочетать JQUERY и JS. Если пишешь часть кода на JS то на JS. Если другую часть пишешь на JQUUERY, то всю пишешь на JQUERY.
 $(".arrow-up").on("click", () => {
-  console.log("Нажал")
   $("html, body").animate({scrollTop: 0}, 200)
 })
 
@@ -91,56 +90,133 @@ imgDelphi.innerHTML = "<img class='big-logo-categoties' src='./images/dest/categ
 //Также добавляй новую переменную в elseif, ниже.
 
 //БЛОКИ СО СТАТЬЯМИ(по каждой категории). Бро прости за этот HTML, в JS он выглядит просто ублюдски. !Подсказка: Смотри на блок с классом info-block, он находится в файле index.html.(Так тебе будет легче заполнять эти Иероглифы)
+
+//ФУНКЦИЯ ДОБАВЛЯЮЩАЯ СТАТЬИ, при ее вызове мы передаем внутрь стать которые будем выводить. Кол-во статей можно увеличить.
+function addArticleJS(article1, article2){
+  document.querySelector("#articles-from-JS").insertAdjacentElement('afterbegin', article1);
+  document.querySelector("#articles-from-JS").insertAdjacentElement('afterbegin', article2);
+}
+
+// СТАТЬИ ПО JS
 let infoJS = document.createElement('div');
 infoJS.classList.add("articlesss");
-infoJS.insertAdjacentHTML("afterbegin", "<span class='text-time' id='time'>Сегодня в 8:00</span> <a href='#'><h1 class='info-block__title'>Тут столько кода, что в нем можно утонуть</h1></a><a href=#><div class='author'><div class='author__img' style='background-image: url(http://sun9-3.userapi.com/s/v1/if1/y72Ov_XZPLyuIeAQsCKjkYj31CV4h3ULfIBf755hFxDLRpqvvyxv0Rcs-RDqK0dOBufGqVX5.jpg?size=200x235&quality=96&crop=0,0,500,588&ava=1)'></div><div class='author__name'>reeenooo761</div></div></a><span class='topic-small'><a href='#'>IT-компании</a>,<a href='#'>Финансы</a>,<a href='#'>Развитие IT индустрии</a></span><div class='info-block__img' style='background-image: url(https://img5.goodfon.ru/wallpaper/nbig/3/9c/space-planet-landscape-wallpapers-1920-x-1080.jpg)'></div><div class='info-block__bottom'><div class='button-and-symbols'><a class='button'>Читать далее</a><div class='symbols'><span class='symbols__el' id='dots'>30<i class='fa-solid fa-circle'></i></span><span class='symbols__el' id='views'>1000<i class='fa-solid fa-eye'></i></span><span class='symbols__el' id='comments'>1<i class='fa-solid fa-message'></i></span></div></div><img class='bookmark' src='./images/dest/points/bookmark-img-black.png' alt='Закладка :)'></div>")
+infoJS.insertAdjacentHTML("afterbegin", "<span class='text-time' id='time'>Сегодня в 8:00</span> <a href='#'><h1 class='info-block__title'>Тут столько кода, что в нем можно утонуть</h1></a><a href=#><div class='author'><div class='author__img' style='background-image: url(http://sun9-3.userapi.com/s/v1/if1/y72Ov_XZPLyuIeAQsCKjkYj31CV4h3ULfIBf755hFxDLRpqvvyxv0Rcs-RDqK0dOBufGqVX5.jpg?size=200x235&quality=96&crop=0,0,500,588&ava=1)'></div><div class='author__name'>reeenooo761</div></div></a><span class='topic-small'><a href='#'>IT-компании</a>,<a href='#'>Финансы</a>,<a href='#'>Развитие IT индустрии</a></span><div class='info-block__img' style='background-image: url(https://img5.goodfon.ru/wallpaper/nbig/3/9c/space-planet-landscape-wallpapers-1920-x-1080.jpg)'></div><div class='info-block__bottom'><div class='button-and-symbols'><a class='button' href='./readarticles.html'>Читать далее</a><div class='symbols'><span class='symbols__el' id='dots'>30<i class='fa-solid fa-circle'></i></span><span class='symbols__el' id='views'>1000<i class='fa-solid fa-eye'></i></span><span class='symbols__el' id='comments'>1<i class='fa-solid fa-message'></i></span></div></div><img class='bookmark' src='./images/dest/points/bookmark-img-black.png' alt='Закладка :)'></div>")
 
-//ПЕРЕБОР МАССИВА ВСЕХ КАТЕГОРИЙ, ДЛЯ ТОГО ЧТОБЫ ПРИ КЛИКЕ НА КАКУЮ-ТО ИЗ НИХ ПОЯВЛЯЛАСЬ РАЗНАЯ ИНФА.
+let infoJS2 = document.createElement('div');
+infoJS2.classList.add("articlesss");
+infoJS2.insertAdjacentHTML("afterbegin", "<span class='text-time' id='time'>Сегодня в 8:00</span> <a href='#'><h1 class='info-block__title'>Тут столько кода, что в нем можно утонуть</h1></a><a href=#><div class='author'><div class='author__img' style='background-image: url(http://sun9-3.userapi.com/s/v1/if1/y72Ov_XZPLyuIeAQsCKjkYj31CV4h3ULfIBf755hFxDLRpqvvyxv0Rcs-RDqK0dOBufGqVX5.jpg?size=200x235&quality=96&crop=0,0,500,588&ava=1)'></div><div class='author__name'>reeenooo761</div></div></a><span class='topic-small'><a href='#'>IT-компании</a>,<a href='#'>Финансы</a>,<a href='#'>Развитие IT индустрии</a></span><div class='info-block__img' style='background-image: url(https://img5.goodfon.ru/wallpaper/nbig/3/9c/space-planet-landscape-wallpapers-1920-x-1080.jpg)'></div><div class='info-block__bottom'><div class='button-and-symbols'><a class='button' href='./readarticles.html'>Читать далее</a><div class='symbols'><span class='symbols__el' id='dots'>30<i class='fa-solid fa-circle'></i></span><span class='symbols__el' id='views'>1000<i class='fa-solid fa-eye'></i></span><span class='symbols__el' id='comments'>1<i class='fa-solid fa-message'></i></span></div></div><img class='bookmark' src='./images/dest/points/bookmark-img-black.png' alt='Закладка :)'></div>")
+
+//----
+
+// СТАТЬИ ПО PHYTON
+let python = document.createElement('div');
+python.classList.add("articlesss");
+python.insertAdjacentHTML("afterbegin", "<span class='text-time' id='time'>Сегодня в 8:00</span> <a href='#'><h1 class='info-block__title'>Тут столько кода, что в нем можно утонуть</h1></a><a href=#><div class='author'><div class='author__img' style='background-image: url(http://sun9-3.userapi.com/s/v1/if1/y72Ov_XZPLyuIeAQsCKjkYj31CV4h3ULfIBf755hFxDLRpqvvyxv0Rcs-RDqK0dOBufGqVX5.jpg?size=200x235&quality=96&crop=0,0,500,588&ava=1)'></div><div class='author__name'>reeenooo761</div></div></a><span class='topic-small'><a href='#'>IT-компании</a>,<a href='#'>Финансы</a>,<a href='#'>Развитие IT индустрии</a></span><div class='info-block__img' style='background-image: url(https://xakep.ru/wp-content/uploads/2018/01/150493/Green-Python-h.jpg)'></div><div class='info-block__bottom'><div class='button-and-symbols'><a class='button' href='./readarticles.html'>Читать далее</a><div class='symbols'><span class='symbols__el' id='dots'>30<i class='fa-solid fa-circle'></i></span><span class='symbols__el' id='views'>1000<i class='fa-solid fa-eye'></i></span><span class='symbols__el' id='comments'>1<i class='fa-solid fa-message'></i></span></div></div><img class='bookmark' src='./images/dest/points/bookmark-img-black.png' alt='Закладка :)'></div>")
+
+let python2 = document.createElement('div');
+python2.classList.add("articlesss");
+python2.insertAdjacentHTML("afterbegin", "<span class='text-time' id='time'>Сегодня в 8:00</span> <a href='#'><h1 class='info-block__title'>Тут столько кода, что в нем можно утонуть</h1></a><a href=#><div class='author'><div class='author__img' style='background-image: url(http://sun9-3.userapi.com/s/v1/if1/y72Ov_XZPLyuIeAQsCKjkYj31CV4h3ULfIBf755hFxDLRpqvvyxv0Rcs-RDqK0dOBufGqVX5.jpg?size=200x235&quality=96&crop=0,0,500,588&ava=1)'></div><div class='author__name'>reeenooo761</div></div></a><span class='topic-small'><a href='#'>IT-компании</a>,<a href='#'>Финансы</a>,<a href='#'>Развитие IT индустрии</a></span><div class='info-block__img' style='background-image: url(https://xakep.ru/wp-content/uploads/2018/01/150493/Green-Python-h.jpg)'></div><div class='info-block__bottom'><div class='button-and-symbols'><a class='button' href='./readarticles.html'>Читать далее</a><div class='symbols'><span class='symbols__el' id='dots'>30<i class='fa-solid fa-circle'></i></span><span class='symbols__el' id='views'>1000<i class='fa-solid fa-eye'></i></span><span class='symbols__el' id='comments'>1<i class='fa-solid fa-message'></i></span></div></div><img class='bookmark' src='./images/dest/points/bookmark-img-black.png' alt='Закладка :)'></div>")
+
+// СТАТЬИ ПО JAVA
+let java = document.createElement('div');
+java.classList.add("articlesss");
+java.insertAdjacentHTML("afterbegin", "<span class='text-time' id='time'>Сегодня в 8:00</span> <a href='#'><h1 class='info-block__title'>Тут столько кода, что в нем можно утонуть</h1></a><a href=#><div class='author'><div class='author__img' style='background-image: url(http://sun9-3.userapi.com/s/v1/if1/y72Ov_XZPLyuIeAQsCKjkYj31CV4h3ULfIBf755hFxDLRpqvvyxv0Rcs-RDqK0dOBufGqVX5.jpg?size=200x235&quality=96&crop=0,0,500,588&ava=1)'></div><div class='author__name'>reeenooo761</div></div></a><span class='topic-small'><a href='#'>IT-компании</a>,<a href='#'>Финансы</a>,<a href='#'>Развитие IT индустрии</a></span><div class='info-block__img' style='background-image: url(https://d-russia.ru/wp-content/uploads/2021/04/java.jpg)'></div><div class='info-block__bottom'><div class='button-and-symbols'><a class='button' href='#'>Читать далее</a><div class='symbols'><span class='symbols__el' id='dots'>30<i class='fa-solid fa-circle'></i></span><span class='symbols__el' id='views'>1000<i class='fa-solid fa-eye'></i></span><span class='symbols__el' id='comments'>1<i class='fa-solid fa-message'></i></span></div></div><img class='bookmark' src='./images/dest/points/bookmark-img-black.png' alt='Закладка :)'></div>")
+
+let java2 = document.createElement('div');
+java2.classList.add("articlesss");
+java2.insertAdjacentHTML("afterbegin", "<span class='text-time' id='time'>Сегодня в 8:00</span> <a href='#'><h1 class='info-block__title'>Тут столько кода, что в нем можно утонуть</h1></a><a href=#><div class='author'><div class='author__img' style='background-image: url(http://sun9-3.userapi.com/s/v1/if1/y72Ov_XZPLyuIeAQsCKjkYj31CV4h3ULfIBf755hFxDLRpqvvyxv0Rcs-RDqK0dOBufGqVX5.jpg?size=200x235&quality=96&crop=0,0,500,588&ava=1)'></div><div class='author__name'>reeenooo761</div></div></a><span class='topic-small'><a href='#'>IT-компании</a>,<a href='#'>Финансы</a>,<a href='#'>Развитие IT индустрии</a></span><div class='info-block__img' style='background-image: url(https://d-russia.ru/wp-content/uploads/2021/04/java.jpg)'></div><div class='info-block__bottom'><div class='button-and-symbols'><a class='button' href='#'>Читать далее</a><div class='symbols'><span class='symbols__el' id='dots'>30<i class='fa-solid fa-circle'></i></span><span class='symbols__el' id='views'>1000<i class='fa-solid fa-eye'></i></span><span class='symbols__el' id='comments'>1<i class='fa-solid fa-message'></i></span></div></div><img class='bookmark' src='./images/dest/points/bookmark-img-black.png' alt='Закладка :)'></div>")
+
+//// СТАТЬИ ПО GO
+let go = document.createElement('div');
+go.classList.add("articlesss");
+go.insertAdjacentHTML("afterbegin", "<span class='text-time' id='time'>Сегодня в 8:00</span> <a href='#'><h1 class='info-block__title'>Тут столько кода, что в нем можно утонуть</h1></a><a href=#><div class='author'><div class='author__img' style='background-image: url(http://sun9-3.userapi.com/s/v1/if1/y72Ov_XZPLyuIeAQsCKjkYj31CV4h3ULfIBf755hFxDLRpqvvyxv0Rcs-RDqK0dOBufGqVX5.jpg?size=200x235&quality=96&crop=0,0,500,588&ava=1)'></div><div class='author__name'>reeenooo761</div></div></a><span class='topic-small'><a href='#'>IT-компании</a>,<a href='#'>Финансы</a>,<a href='#'>Развитие IT индустрии</a></span><div class='info-block__img' style='background-image: url(https://lh3.googleusercontent.com/dPVmWPtrmsCikRMvuywcz6eSMlVUpucwoCmGoyQAa3GzkpGvORuXMSx9nbWU8CEmRF5_e_9_DBKMB71SwZFa3qzY4hV53jp0XUV1t5BiHPDwa12FvPHK-DiACg-WWyitdMPfLjN0)'></div><div class='info-block__bottom'><div class='button-and-symbols'><a class='button' href='#'>Читать далее</a><div class='symbols'><span class='symbols__el' id='dots'>30<i class='fa-solid fa-circle'></i></span><span class='symbols__el' id='views'>1000<i class='fa-solid fa-eye'></i></span><span class='symbols__el' id='comments'>1<i class='fa-solid fa-message'></i></span></div></div><img class='bookmark' src='./images/dest/points/bookmark-img-black.png' alt='Закладка :)'></div>")
+
+let go2 = document.createElement('div');
+go2.classList.add("articlesss");
+go2.insertAdjacentHTML("afterbegin", "<span class='text-time' id='time'>Сегодня в 8:00</span> <a href='#'><h1 class='info-block__title'>Тут столько кода, что в нем можно утонуть</h1></a><a href=#><div class='author'><div class='author__img' style='background-image: url(http://sun9-3.userapi.com/s/v1/if1/y72Ov_XZPLyuIeAQsCKjkYj31CV4h3ULfIBf755hFxDLRpqvvyxv0Rcs-RDqK0dOBufGqVX5.jpg?size=200x235&quality=96&crop=0,0,500,588&ava=1)'></div><div class='author__name'>reeenooo761</div></div></a><span class='topic-small'><a href='#'>IT-компании</a>,<a href='#'>Финансы</a>,<a href='#'>Развитие IT индустрии</a></span><div class='info-block__img' style='background-image: url(https://lh3.googleusercontent.com/dPVmWPtrmsCikRMvuywcz6eSMlVUpucwoCmGoyQAa3GzkpGvORuXMSx9nbWU8CEmRF5_e_9_DBKMB71SwZFa3qzY4hV53jp0XUV1t5BiHPDwa12FvPHK-DiACg-WWyitdMPfLjN0)'></div><div class='info-block__bottom'><div class='button-and-symbols'><a class='button' href='#'>Читать далее</a><div class='symbols'><span class='symbols__el' id='dots'>30<i class='fa-solid fa-circle'></i></span><span class='symbols__el' id='views'>1000<i class='fa-solid fa-eye'></i></span><span class='symbols__el' id='comments'>1<i class='fa-solid fa-message'></i></span></div></div><img class='bookmark' src='./images/dest/points/bookmark-img-black.png' alt='Закладка :)'></div>")
+
+
+
+//Перебор массива всех категорий, для того чтобы при клике на категорию появлялась нужная информация.
 arrArticles.forEach(function(el, i, array) {
   el.onmousedown = function(){
     $(".articles-categories").css({
       "background-color": "#fff",
       "color": "black",
     })
+
+    //Действия которые происходят сразу после нажатия.
     el.style.backgroundColor="black"
     el.style.color="#fff";
     document.querySelector(".for-js-img").innerHTML = "";
     document.querySelector("#articles-from-JS").innerHTML = "";
+    $("#articles-from-JS").css("display", "none");
+    $("#no-articles").css("display", "none");
+
     if(el.id == "js"){
       document.querySelector(".for-js-img").append(imgJS);
-      $("#articles-from-JS").css("display", "flex")
-      document.querySelector("#articles-from-JS").insertAdjacentElement('afterbegin', infoJS)
+      $("#articles-from-JS").css("display", "flex");
+      addArticleJS(infoJS, infoJS2);
     }
     else if(el.id == "python"){
       document.querySelector(".for-js-img").append(imgPython);
+      $("#articles-from-JS").css("display", "flex");
+      addArticleJS(python, python2);
     }
     else if(el.id == "java"){
       document.querySelector(".for-js-img").append(imgJava);
+      $("#articles-from-JS").css("display", "flex");
+      addArticleJS(java, java2);
     }
     else if(el.id == "go"){
       document.querySelector(".for-js-img").append(imgGo);
+      $("#articles-from-JS").css("display", "flex");
+      addArticleJS(go, go2);
+      if(document.querySelector("#articles-from-JS").innerHTML == ""){
+        $("#no-articles").css("display", "flex");
+      }
     }
     else if(el.id == "ruby"){
       document.querySelector(".for-js-img").append(imgRuby);
+      //Прям в эту строчку вставляешь функцию для вставки статей(Пример выше, как в GO). При добавлении статей вставлять нудно кусок кода начинающийся с $(#articles-from-JS). Сначала лучше спроси у меня, потом вставляй.
+      if(document.querySelector("#articles-from-JS").innerHTML == ""){
+        $("#no-articles").css("display", "flex");
+      }
     }
     else if(el.id == "pascal"){
       document.querySelector(".for-js-img").append(imgPascal);
+      if(document.querySelector("#articles-from-JS").innerHTML == ""){
+        $("#no-articles").css("display", "flex");
+      }
     }
     else if(el.id == "c"){
       document.querySelector(".for-js-img").append(imgC);
+      if(document.querySelector("#articles-from-JS").innerHTML == ""){
+        $("#no-articles").css("display", "flex");
+      }
     }
     else if(el.id == "cplus"){
       document.querySelector(".for-js-img").append(imgCPlus);
+      if(document.querySelector("#articles-from-JS").innerHTML == ""){
+        $("#no-articles").css("display", "flex");
+      }
     }
     else if(el.id == "csharp"){
       document.querySelector(".for-js-img").append(imgCsharp);
+      if(document.querySelector("#articles-from-JS").innerHTML == ""){
+        $("#no-articles").css("display", "flex");
+      }
     }
     else if(el.id == "delphi"){
       document.querySelector(".for-js-img").append(imgDelphi);
+      if(document.querySelector("#articles-from-JS").innerHTML == ""){
+        $("#no-articles").css("display", "flex");
+      }
     }
   }
 })
 
+//Это для изменения стилей при клике на категорию.
 $(".articles-categories").on("mousedown", () => {
   $(".articles-categories").css({
     "margin": "0",
@@ -151,4 +227,15 @@ $(".articles-categories").on("mousedown", () => {
     "float": "right",
   })
 
+})
+
+// JS ДЛЯ СТРАНИЧКИ NEWS
+// if($(window).scrollTop() + $(window).height() >= $(document).height()){
+//   console.log('пффф');
+// }
+
+document.addEventListener("scroll", ()=>{
+  if($(window).scrollTop() + $(window).height() >= $(document).height()){
+    document.getElementById("no-news").style.display = "flex";
+  }
 })

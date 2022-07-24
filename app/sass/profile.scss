@@ -1,0 +1,184 @@
+.profile-container {
+  @extend %container;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 40px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0px 1px 5px 1px $shadow;
+}
+
+.profile-information {
+  width: 70%;
+  margin-right: 20px;
+}
+
+.dots-container{
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $greytext;
+  font-size: 24px;
+}
+.profile-dots {
+  width: 30px;
+  height: 30px;
+  opacity: .5;
+  margin-right: 15px;
+}
+
+.aboutuser-title, .user-publication {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0px 1px 5px 1px $shadow;
+  .aboutuser-title-text, .user-publication__text {
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+
+.about-user {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0px 1px 5px 1px $shadow;
+}
+
+.about-user__topblock {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+}
+
+.full-info {
+  // display: flex;
+  // flex-direction: column;
+  width: 60%;
+}
+
+.profile__links {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+
+.full-info__first, .full-info__second {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.full-info__first {
+  margin-bottom: 50px;
+}
+
+.info__title {
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.profile-decoration {
+  width: 10px;
+  height: 10px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.profile-infotext {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.profile-email {
+  text-decoration: underline;
+}
+
+
+
+.profile-links__el {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.profile-links__img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.profile-links__img-twit {
+  border-radius: 5px;
+}
+
+.about-user__title {
+  text-decoration: underline;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.about-yourself {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0px 1px 5px 1px $shadow;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+//NEWS and ARTICLES
+.user-news-articles {
+  margin: 20px 0;
+}
+.user-news-articles__container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+//user Achivements
+.user-achievements {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.achievements-img {
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+.achievements__name {
+  font-size: 20px;
+  font-weight: 600;
+}
