@@ -25,6 +25,8 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  transition: box-shadow 0.3s ease;
+  &:hover{box-shadow: 0px 0px 10px black;}
 }
 
 .author__name2 {
@@ -32,6 +34,8 @@
   font-weight: 600;
   color: $greytext;
   margin-right: 10px;
+  transition: color 0.3s ease;
+  &:hover {color: #000000;}
 }
 
 .author-of-content {

@@ -239,3 +239,62 @@ document.addEventListener("scroll", ()=>{
     document.getElementById("no-news").style.display = "flex";
   }
 })
+
+
+
+//РАБОТА СТРАНИЦЫ НАСТРОЙКИ ПРОФИЛЯ
+//Существует разница между поиском элементов через $JQUERY и через просто JS
+let ArrSettingsBtn = document.querySelectorAll(".settings-list__el");
+let settingsTitle = document.querySelector(".settings-title-text");
+
+//Блоки настроек:
+let Allsettings = $('.settingClass');
+let mainSettings = document.querySelector(".settings-block");
+let passwordSettings = document.querySelector(".settings-block__password");
+let groupdSettings = document.querySelector(".settings-block__group");
+let comunitydSettings = document.querySelector(".settings-block__comunity");
+
+console.log(ArrSettingsBtn);
+
+ArrSettingsBtn.forEach(function(el, i, arr){
+  el.onmousedown = () => {
+    $('.settings-list__el').removeClass("active-setting");
+    // document.getElementsByClassName(".settings-list__el").classList.remove("active-setting") - Не рабочий код :(
+    el.classList.add("active-setting");
+    Allsettings.css("display", "none");
+    if(el.id == "main") {
+      mainSettings.style.display = "flex"
+      settingsTitle.innerHTML = "Общие";
+    }
+    else if (el.id == "password") {
+      passwordSettings.style.display = "flex";
+      settingsTitle.innerHTML = "Сброс пароля";
+    }
+    else if (el.id == "create-group") {
+      groupdSettings.style.display = "flex";
+      settingsTitle.innerHTML = "Новая группа";
+    }
+    else if (el.id == "create-comunity") {
+      comunitydSettings.style.display = "flex";
+      settingsTitle.innerHTML = "Новое сообщество";
+    }
+  }
+})
+
+//JS ДЛЯ СТРАНИЧКИ Q&A
+let Qcategories = document.querySelectorAll(".categories-list__el");
+
+Qcategories.forEach(function(el, i, arr){
+  el.addEventListener("mousedown", ()=>{
+    $(".categories-list__el").removeClass("active-categories");
+    $(".Questions").css('display', 'none')
+    el.classList.add("active-categories");
+
+    if(el.id == "qs-all"){
+      $(".all-question").css('display', "flex")
+    }
+    else if(el.id == "qs-js"){
+      $(".JS-question").css('display', "flex")
+    }
+  })
+})

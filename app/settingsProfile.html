@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/d2e262a151.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/main.min.css">
+  <title>Document</title>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="header-container">
+      <a href="./index.html">
+      <div class="logo">
+        white<span class="logo__small">:&lt;/code&gt;</span>
+      </div>
+      </a>
+      <div class="menu">
+        <a class="menu__el" href="./news.html" title="Новости"><img class="menu__img" src="./images/dest/menu/news-img-white.png" alt="Список"></a>
+        <a class="menu__el" href="./articles.html" title="Все статьи"><img class="menu__img" src="./images/dest/menu/articles-img-white.png" alt="Список"></a>
+        <a class="menu__el" href="./QandA.html" title="Вопросы и ответы"><img class="menu__img" src="./images/dest/menu/qa-img-white.png" alt="Список"></a>
+        <a class="menu__el" href="" title="Сообщество"><img class="menu__img" src="./images/dest/menu/community-img-white.png" alt="Список"></a>
+        <a class="menu__el" href="./login.html" title="Личный кабинет"><img class="menu__img" src="./images/dest/menu/profile-img-white.png" alt="Список"></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="settings-container">
+      <div class="settings-information">
+        <div class="settings-title">
+          <span class="settings-title-text">Общие</span>
+        </div>
+        
+        <div class="settings-block settingClass">
+          <div class="user-settings">
+            <div class="user-settings__leftblock">
+              <label for="setting-name" class="label-text">Имя</label><br>
+              <input id="setting-name" class="input-style" type="text" placeholder="Юрий?"><br>
+
+              <label for="setting-surname" class="label-text">Фамилия</label><br>
+              <input id="setting-surname" class="input-style" type="text" placeholder="Юрий?"><br>
+
+              <label for="setting-email" class="label-text">Email</label><br>
+              <input id="setting-email" class="input-style" type="email" placeholder="Юрий?"><br>
+
+              <label for="setting-city" class="label-text">Город</label><br>
+              <input id="setting-city" class="input-style" type="text" placeholder="Юрий?"><br>
+            </div>
+            <div class="user-settings__rightblock">
+              <label class="label-text">Специализация</label><br>
+              <input id="1" class="input-style" type="text" placeholder="Твои скилы"><br>
+              <input id="2" class="input-style" type="text" placeholder="Твои скилы"><br>
+              <input id="3" class="input-style" type="text" placeholder="Твои скилы"><br>
+              <input id="4" class="input-style" type="text" placeholder="Твои скилы"><br>
+            </div>
+          </div>
+
+          <div class="contact-settings">
+            <div class="contact-settings__el">
+            <img class="profile-links__img" src="./images/dest/society/github-logo-img.png">
+            <input type="text" class="input-style" placeholder="@reeenooo">
+            </div>
+
+            <div class="contact-settings__el">
+            <img class="profile-links__img profile-links__img-twit" src="./images/dest/society/twitter-logo-img.png">
+            <input type="text" class="input-style" placeholder="@reeenooo">
+            </div>
+
+            <div class="contact-settings__el">
+            <img class="profile-links__img" src="./images/dest/society/telegram-logo-img.png">
+            <input type="text" class="input-style" placeholder="@reeenooo">
+            </div>
+          </div>
+
+          <div class="settings-about-user">
+            <span class="settings-about-user__title">О себе</span>
+            <div class="settings-about-user__text">
+              <textarea class="setting-about-textarea" placeholder="Напишите что-нибудь о себе..."></textarea>
+            </div>
+          </div>
+
+          <div class="button button-savesetting" id="save-settings">Сохранить</div>
+        </div>
+
+        <div class="settings-block__password settingClass">
+          <div class="user-settings">
+            <div class="user-settings__leftblock">
+              <label for="setting-password" class="label-text">Пароль</label><br>
+              <input id="setting-password" class="input-style" type="password" placeholder="Пароль"><br>
+              <label for="setting-repeatpassword" class="label-text">Повторите новый пароль</label><br>
+              <input id="setting-repeatpassword" class="input-style" type="password" placeholder="Не понял"><br>
+            </div>
+          </div>
+        <div class="button button-savesetting" id="save-settings">Сохранить</div>
+        </div>
+
+        <div class="settings-block__group settingClass">
+          <div class="user-settings">
+            <div class="user-settings__leftblock">
+              <label for="setting-groupName" class="label-text">Название группы</label><br>
+              <input id="setting-groupName" class="input-style" type="text" placeholder="Пароль"><br>
+              <label class="label-text">Категории</label><br>
+              <input id="category-one" class="input-style" type="text" placeholder="Обязательно"><br>
+              <input id="category-two" class="input-style" type="text" placeholder="Необязательно"><br>
+              <input id="category-three" class="input-style" type="text" placeholder="Необязательно"><br>
+            </div>
+            <div class="user-settings__rightblock">
+              <div class="group-image" style="background-image: url('https://kartinkin.net/uploads/posts/2022-03/1646525519_1-kartinkin-net-p-kartinki-so-stichem-1.jpg');">
+                <div class="group-image-bg" style="background-image: url('./images/dest/add-avatar-mask.png');"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="settings-about-group">
+            <span class="settings-about-group__title">Описание группы</span>
+            <div class="settings-about-group__text">
+              <textarea class="setting-about-textarea" placeholder="Напишите что-нибудь о вашей группе..."></textarea>
+            </div>
+          </div>
+
+          <div class="short-link__block">
+          <label class="label-text">Короткая ссылка</label><br>
+          <input id="setting-shortlink-group" class="input-style" type="text" placeholder="Обязательно"><br>
+          </div>
+
+        <div class="button button-savesetting" id="save-settings">Сохранить</div>
+        </div>
+
+        <div class="settings-block__comunity settingClass">
+          <div class="user-settings">
+            <div class="user-settings__leftblock">
+              <label for="setting-comunityName" class="label-text">Название сообщества</label><br>
+              <input id="setting-comunityName" class="input-style" type="text" placeholder="Пароль"><br>
+              <label class="label-text">Категории</label><br>
+              <input id="comynity-category-one" class="input-style" type="text" placeholder="Обязательно"><br>
+              <input id="comynity-category-two" class="input-style" type="text" placeholder="Необязательно"><br>
+              <input id="comynity-category-three" class="input-style" type="text" placeholder="Необязательно"><br>
+            </div>
+            <div class="user-settings__rightblock">
+              <div class="comunity-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvSgIuIgZooeJ_7x_31RegQhT1fiEMp3JGIY5j-mnt_D66UxRlH5P3BtQz_qcyP9trTyE&usqp=CAU');">
+                <div class="comunity-image-bg" style="background-image: url('./images/dest/add-avatar-mask.png');"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="settings-about-group">
+            <span class="settings-about-group__title">Описание сообщества</span>
+            <div class="settings-about-group__text">
+              <textarea class="setting-about-textarea" placeholder="Напишите что-нибудь о вашей группе..."></textarea>
+            </div>
+          </div>
+
+          <div class="short-link__block">
+          <label class="label-text">Короткая ссылка</label><br>
+          <input id="setting-shortlink-comunity" class="input-style" type="text" placeholder="Обязательно"><br>
+          </div>
+
+        <div class="button button-savesetting" id="save-settings">Сохранить</div>
+        </div>
+
+      </div>
+
+      <div class="settings-menu">
+        <div class="settings-list">
+          <div class="settings-list__title">
+            Настройки <span class="settings-list__accountname">zipa161</span>
+          </div>
+
+          <div class="settings-list__el active-setting" id="main">
+            <span>Общие</span>
+          </div>
+          <div class="settings-list__el" id="password">
+            <span>Сброс пароля</span>
+          </div>
+          <div class="settings-list__el" id="create-group">
+            <span>Новая группа</span>
+          </div>
+          <div class="settings-list__el" id="create-comunity">
+            <span>Новое сообщество</span>
+          </div>
+
+          <div class="button-container">
+          <div class="button-publication">
+            <span>Опубликовать статью</span>
+          </div>
+          <div class="button-publication">
+            <span>Опубликовать новость</span>
+          </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+
+  <script src="./js/app.min.js"></script>
+</body>
+</html>

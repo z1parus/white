@@ -1,0 +1,125 @@
+.QA-container {
+  @extend %container;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 40px;
+}
+
+.QA-information {
+  width: 70%;
+  margin-right: 20px;
+}
+
+.QA-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0px 1px 5px 1px $shadow;
+}
+
+.qa-button {
+  width: 300px;
+  margin-left: 20px;
+}
+
+.QA-title__text {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.search-block {
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0px 1px 5px 1px $shadow;
+}
+
+.search__img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  opacity: .5;
+}
+
+.search-input {
+  width: 100%;
+  border: 0;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+}
+
+.question-block {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  box-shadow: 0px 1px 5px 1px $shadow;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.question__author {
+  margin: 10px 0;
+}
+
+.btn-lookanswer {
+  margin: 10px 0;
+}
+
+.question-categories {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.categories-list {
+  width: 100%;
+  min-height: 475px;
+  padding: 10px 0;
+  background-color: white;
+  box-shadow: 0px 1px 5px 1px $shadow;
+  margin-bottom: 20px; 
+}
+
+.categories-list__title {
+  width: 100%;
+  height: 30px;
+  padding: 0 10px;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.categories-list__el {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 15px 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: $textcolor;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    color: #fff;
+    background-color: black;
+  }
+}
+.active-categories {
+  background-color: black;
+  color: #fff;
+}
+
+.Questions {
+  display: none;
+}
+.all-question {
+  display: flex;
+}
