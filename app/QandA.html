@@ -32,7 +32,7 @@
       <div class="QA-information">
         <div class="QA-title">
           <span class="QA-title__text">Q&A</span>
-          <a class="button qa-button" href="#">Задать вопрос</a>
+          <a class="button qa-button" href="./askQuestion.html">Задать вопрос</a>
         </div>
 
         <div class="search-block">
@@ -40,7 +40,6 @@
           <input class="search-input" type="text" placeholder="Найти вопрос...">
         </div>
 
-<!-- При создании вопроса пользователем, добавь id для нужных блоков, классы не меняй. -->
 <!-- Заглушки для вопросов разной категории -->
         <div class="all-question Questions">
           <div class="question-block">
@@ -48,7 +47,7 @@
             <a href="#"><h1 class="info-block__title">ВСЕ ВОПРОСЫ?</h1></a>
             <a href="#">
             <div class="author question__author">
-              <div class="author__img" style="background-image: url('https://i.ytimg.com/vi/Ml4SZWNlZ9I/maxresdefault.jpg')"></div>
+              <div class="author__img" style="background-image: url('https://sun9-18.userapi.com/impg/r9MMEAlfrF-qnaJQzCvS2uIwF9Y7Epi5Inrl5w/XW9z_F2X_mQ.jpg?size=900x899&quality=96&sign=658d5e5ebe0c7a0a948a5fbb99ba1623&type=album')"></div>
               <div class="author__name">zipa161</div>
             </div>
             </a>
@@ -60,7 +59,7 @@
             
             <div class="info-block__bottom">
               <div class="button-and-symbols">
-                <a class="button btn-lookanswer">Смотреть</a>
+                <a class="button btn-lookanswer" href="./answer.html">Смотреть</a>
                 <div class="symbols">
                   <span class="symbols__el" id="views">26<i class="fa-solid fa-eye"></i></span>
                   <span class="symbols__el" id="сomments">26<i class="fa-solid fa-message"></i></span>
@@ -88,7 +87,7 @@
             
             <div class="info-block__bottom">
               <div class="button-and-symbols">
-                <a class="button btn-lookanswer">Смотреть</a>
+                <a class="button btn-lookanswer" href="./answer.html">Смотреть</a>
                 <div class="symbols">
                   <span class="symbols__el" id="views">26<i class="fa-solid fa-eye"></i></span>
                   <span class="symbols__el" id="сomments">26<i class="fa-solid fa-message"></i></span>
@@ -101,7 +100,7 @@
         <div class="python-question Questions">
           <div class="question-block">
             <span class="text-time" id="time">Сегодня в 12:48</span>
-            <a href="#"><h1 class="info-block__title">Как через Django ORM запросить две таблицы данных?</h1></a>
+            <a href="#"><h1 class="info-block__title">Python это змея?</h1></a>
             <a href="#">
             <div class="author question__author">
               <div class="author__img" style="background-image: url('https://i.ytimg.com/vi/Ml4SZWNlZ9I/maxresdefault.jpg')"></div>
@@ -127,7 +126,7 @@
 
           <div class="question-block">
             <span class="text-time" id="time">Сегодня в 12:48</span>
-            <a href="#"><h1 class="info-block__title">Как начать зарабатывать на програмировании уже сейчас?</h1></a>
+            <a href="#"><h1 class="info-block__title">Python это змея??</h1></a>
             <a href="#">
             <div class="author question__author">
               <div class="author__img" style="background-image: url('https://i.ytimg.com/vi/Ml4SZWNlZ9I/maxresdefault.jpg')"></div>
@@ -152,7 +151,14 @@
           </div>
         </div>
 
-        <div class="java-question Questions"></div>
+        <div class="java-question Questions">
+        </div>
+      
+      <div class="button-position">
+        <div class="button">
+          <span>Загрузить больше</span>
+        </div>
+      </div>
         
       </div>
 
@@ -169,11 +175,11 @@
             <img class="articles-categories__img" src="./images//dest/categories/js-logo.png"></img>
             <span>JavaScript</span>
           </div>
-          <div class="categories-list__el">
-            <img class="articles-categories__img" src="./images//dest/categories/python-logo.png" id="qs-python"></img>
+          <div class="categories-list__el" id="qs-python">
+            <img class="articles-categories__img" src="./images//dest/categories/python-logo.png"></img>
             <span>Python</span>
           </div>
-          <div class="categories-list__el">
+          <div class="categories-list__el" id="qs-java">
             <img class="articles-categories__img" src="./images//dest/categories/java-logo.png"></img>
             <span>JAVA</span>
           </div>

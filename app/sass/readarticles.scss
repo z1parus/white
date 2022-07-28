@@ -121,7 +121,7 @@
   }
 }
 
-.articles__comments {
+.articles__comments, .answer__comments {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -184,4 +184,46 @@
     width: 2px;
     margin: 0 auto;
   }
+}
+
+
+.information-whoask {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0px 1px 5px 1px $shadow;
+}
+.information-whoask__block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.whoask-img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+}
+.whoask-dots__el {
+  width: 15px;
+  height: 15px;
+  opacity: .5;
+}
+.whoask-name {
+  font-weight: 700;
+  margin: 0 10px;
+}
+.whoask-boldtext {
+  font-weight: 600;
+}
+.whoask-greytext {
+  font-weight: 400;
+  color: $greytext;
+}
+
+.answer-complaint {
+  margin-top: 20px;
+  color: $greytext;
+  text-decoration: underline;
 }

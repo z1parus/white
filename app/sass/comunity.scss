@@ -1,0 +1,136 @@
+.comunity-container {
+  margin-top: 20px;
+  @extend %container;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.comunity-title__el {
+  display: flex;
+  align-items: center;
+}
+.comunity-title__img {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.comunity-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.comunity-top-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.comunity-top, .group-top {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0px 1px 5px 1px $shadow;
+}
+
+.comunity-top__el {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  cursor: pointer;
+  &:hover {
+    .comunity-top__img {
+      box-shadow: 0px 1px 5px 1px black;
+    }
+    .comunity-top__name {color: black;}
+  }
+}
+
+.comunity-top__main-info {
+  display: flex;
+  align-items: center;
+}
+
+.comunity-top__img {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.comunity-top__name {
+  font-size: 18px;
+  font-weight: 700;
+  color: $greytext;
+}
+
+.comunity-catrgories {
+  margin-left: 5px;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.comunity-icon__img {
+  width: 30px;
+  height: 30px;
+  opacity: .5;
+  margin-left: 5px;
+}
+
+.comunity-amount {
+  display: flex;
+  align-items: center;
+  color: $greytext;
+}
+
+.CG-categories-title {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0px 1px 5px 1px $shadow;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.user-subscription {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  background-color: #fff;
+  margin: 20px 0;
+  box-shadow: 0px 1px 5px 1px $shadow;
+}
+
+.subscribes {
+  margin-right: 10px;
+}
+
+.user-subscription__block, .user-comunity__el {
+  display: flex;
+  align-items: center;
+}
+
+.user-comunity, .user-comunity__el {
+  margin: 10px 0;
+}
+.user-comunity__title {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.user-comunity__img {
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-size: cover;
+  margin-right: 5px;
+  border-radius: 5px;
+}

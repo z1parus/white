@@ -296,5 +296,8 @@ Qcategories.forEach(function(el, i, arr){
     else if(el.id == "qs-js"){
       $(".JS-question").css('display', "flex")
     }
+    else if(el.id == "qs-python"){
+      $(".python-question").css('display', "flex")
+    }
   })
 })

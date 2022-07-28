@@ -1,0 +1,123 @@
+.mainAnswer-container {
+  @extend %container;
+}
+
+.answer-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.left-answer-container {
+  width: 70%;
+  margin-right: 20px;
+}
+
+.right-answer-container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+ }
+
+ .topic-question {font-size: 24px;}
+
+.title-answer-block {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #fff;
+  margin: 20px 0;
+  box-shadow: 0px 1px 5px 1px $shadow;
+}
+
+.block-question, .answer-title {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #fff;
+  margin: 20px 0;
+  box-shadow: 0px 1px 5px 1px $shadow;
+}
+
+.question-answer-arrow {
+  margin: 10px 0;
+}
+
+.answer-title {
+  flex-direction: row;
+  h1 {font-size: 24px;}
+}
+
+.answer-amount {color: $greytext;}
+
+.user-answer {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #fff;
+  margin: 20px 0;
+  box-shadow: 0px 1px 5px 1px rgb(0, 255, 42);
+}
+
+.who-answer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.who-answer__profile {
+  display: flex;
+  align-items: center;
+}
+
+.who-answer__name-container {
+  display: flex;
+  align-items: center;
+}
+.who-answer__name {
+  font-size: 16px;
+  color: black;
+}
+
+.who-answer__dots {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  opacity: .5;
+}
+
+.who-answer__rating {
+  font-size: 16px;
+  color: $greytext;
+  display: flex;
+  align-items: center;
+}
+
+.who-answer__arrow {display: flex; justify-content: flex-end;}
+
+.complaint {
+  text-decoration: underline;
+  color: $greytext;
+}
+
+.answer-comments {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  background-color: #fff;
+  margin: 20px 0;
+  box-shadow: 0px 1px 5px 1px $shadow;
+  font-weight: 700;
+}
+
+.check-mark {
+  width: 25px;
+  height: 25px;
+  opacity: .5;
+  margin-left: 15px;
+}

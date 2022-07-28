@@ -119,7 +119,14 @@
 
 .Questions {
   display: none;
+  flex-direction: column;
 }
 .all-question {
   display: flex;
+}
+
+
+.button-position {
+  display: flex;
+  justify-content: center;
 }
