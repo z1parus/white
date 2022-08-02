@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/d2e262a151.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/main.min.css">
+  <title>Document</title>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="header-container">
+      <a href="./index.html">
+      <div class="logo">
+        white<span class="logo__small">:&lt;/code&gt;</span>
+      </div>
+      </a>
+      <div class="menu">
+        <a class="menu__el" href="./news.html" title="Новости"><img class="menu__img" src="./images/dest/menu/news-img-white.png" alt="Список"></a>
+        <a class="menu__el" href="./articles.html" title="Все статьи"><img class="menu__img" src="./images/dest/menu/articles-img-white.png" alt="Список"></a>
+        <a class="menu__el" href="./QandA.html" title="Вопросы и ответы"><img class="menu__img" src="./images/dest/menu/qa-img-white.png" alt="Список"></a>
+        <a class="menu__el" href="./comunity.html" title="Сообщество"><img class="menu__img" src="./images/dest/menu/community-img-white.png" alt="Список"></a>
+        <a class="menu__el" href="./login.html" title="Личный кабинет"><img class="menu__img" src="./images/dest/menu/profile-img-white.png" alt="Список"></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="top-comunity-name">
+      <div class="about-comunity">
+        <div class="about-comunity__leftblock">
+        <img class="about-comunity__img" src="https://sun9-80.userapi.com/impg/4BPh-kkvmLsvn7JDfODEOukvLSAwO8j8fZyiCA/tJjP0wN4I8k.jpg?size=749x748&quality=95&sign=670b48b0d99649c05f7de92209a6613f&type=album" alt="Фото сообщества">
+        <div>
+          <div class="about-comunity__title">Peppa’s Development</div>
+          <div class="about-comunity__category">JavaScript, HTML, CSS</div>
+          <div class="number-party">
+            <span>1945</span>
+            <img  class="number-party__img" src="./images/dest/community-img-black.png" alt="comunity">
+          </div>
+        </div>
+        </div>
+        <div class="subscribe-at-comunity subscribe-at-comunity__black">
+          <i class="fa-solid fa-plus"></i>
+          <i class="fa-solid fa-check"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="all-information">
+        <div class="comunitypage-title">
+          <span>Посты в группе</span>
+          <i class="fa-solid fa-plus edit-plus plus-addPost__group"></i>
+        </div>
+        <div class="add-post-block">
+          <form class="new-group-post">
+          <textarea class="setting-about-textarea" placeholder="Новый пост..."></textarea>
+          <div class="add-image-container">
+          <label class="button-add-img" for="files">Прикрепить изображение</label>
+          <img class="add-post__img" id="preview" src="#" alt="Выберите изображение">
+          <input type="file" id="files" accept="image/jpeg,image/png" style="visibility:hidden">
+          </div>
+          </form>
+          <div class="edit-button-container">
+          <div class="button button-new-post">Опубликовать новый пост</div>
+          <div class="button button-delete">Удалить</div>
+          </div>
+        </div>
+
+        <!-- Если нужны новые посты добавляй блоки с классом comunitypage-post. -->
+
+        <div class="comunitypage-post">
+            <div class="comunitypage-post__nameblock">
+              <div class="post__el-name">
+              <div class="user-comunity__img" style="background-image: url('https://sun9-69.userapi.com/impg/KixlX1gFsgP58HOK_bBRi8v1mbrHwKtupQB5sw/tapB96MHwNw.jpg?size=1080x1350&quality=95&sign=bbabcd16dd1c92e85043929bb8bd7613&type=album');"></div>
+              <span class="user-comunity__name">Peppa’s Development</span>
+              </div>
+              <span class="text-time">Сегодня в 12:56</span>
+            </div>
+            <p>
+              Всем привет, как настроение? Скроро в нашем паблике выйдет статья на тему “Как закрыть Visual Studio и начать жить нормальной, гетеросексуальной жизнью?"
+              Ставьте лайк если ждете. Обнял!
+            </p>
+            <div class="post-action-container">
+              <a class="add-comment" href="#">Комментировать</a>
+              <div class="like-block">
+                <span class="number-of-likes">10000</span>
+                <img class="like-img like-img__white" src="./images/dest/like/heart-icon-white.png" alt="like">
+              </div>
+            </div>
+        </div>
+
+        <div class="comunitypage-post">
+          <div class="comunitypage-post__nameblock">
+            <div class="post__el-name">
+            <div class="user-comunity__img" style="background-image: url('https://sun9-69.userapi.com/impg/KixlX1gFsgP58HOK_bBRi8v1mbrHwKtupQB5sw/tapB96MHwNw.jpg?size=1080x1350&quality=95&sign=bbabcd16dd1c92e85043929bb8bd7613&type=album');"></div>
+            <span class="user-comunity__name">Peppa’s Development</span>
+            </div>
+            <span class="text-time">Сегодня в 12:56</span>
+          </div>
+          <h2>Как зажить по жизни?</h2>
+          <div class="comunity-post__img" style="background-image: url('https://cdnn21.img.ria.ru/images/152144/45/1521444519_0:157:3084:1892_1920x0_80_0_0_e4007dd1d24c3c3fe211764bb1ff4868.jpg');"></div>
+          <div class="info-block__bottom">
+            <div class="button-and-symbols">
+              <a class="button">Читать далее</a>
+              <div class="symbols">
+                <span class="symbols__el" id="views">26<i class="fa-solid fa-eye"></i></span>
+                <span class="symbols__el" id="сomments">26<i class="fa-solid fa-message"></i></span>
+              </div>
+            </div>
+            <div class="like-block">
+              <span class="number-of-likes">10000</span>
+              <img class="like-img like-img__white" src="./images/dest/like/heart-icon-white.png" alt="like">
+            </div>
+          </div>
+      </div>
+      </div>
+      <div class="comunity-administration">
+        <p class="comunity-administration__bold">Контакты</p>
+        <span class="a-title">Администрация</span>
+        <div class="administration__container">
+          <img class="comunity-administration__img" src="https://sun9-25.userapi.com/impg/GNZbU4aMwF6Tw7lfVQiBAcIeR6hCMbk8lQlPsA/RwiOLDqEOGk.jpg?size=860x550&quality=96&sign=d0faa08c6b21d7cbcfa273f9bf127cb8&type=album">
+          <span class="comunity-administration__name">zipa161</span>
+        </div>
+        <p class="comunity-administration__bold">Точки сообщества</p>
+        <div class="small-icon-block">
+          <img class="small-icon-img" src="./images/dest/points/dots-img-black.png">
+          <span class="number-dots">1321</span>
+          <img class="small-icon-img" src="./images/dest/add-dot-btn.png">
+        </div>
+        </div>
+        <div>
+
+        </div>
+      </div>
+    </div>
+      
+
+
+  </main>
+
+  <script src="./js/app.min.js"></script>
+</body>
+</html>

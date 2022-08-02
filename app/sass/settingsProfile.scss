@@ -115,7 +115,7 @@
   padding: 10px 20px;
   background-color: #fff;
   box-shadow: 0px 1px 5px 1px $shadow;
-  margin-top: 20px;
+  margin: 20px 0;
  }
 
 .setting-about-textarea {
@@ -126,6 +126,9 @@
   font-family: 'Inter', sans-serif;
   font-size: 20px;
   color: $greytext;
+  box-shadow: 0px 1px 5px 1px $shadow;
+  padding: 10px;
+  margin-bottom: 10px;
   &:focus {
     color: black;
   }
@@ -224,4 +227,3 @@
   cursor: pointer;
 }
 
-.short-link__block {margin-top: 20px;}

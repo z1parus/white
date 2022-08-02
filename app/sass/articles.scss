@@ -29,14 +29,14 @@
   align-items: center;
 }
 
-.articles-categories {
+.articles-categories, .articles-category {
   margin: 20px 0;
   box-shadow: 0px 1px 5px 1px $shadow;
   transition: background 0.5s ease-in-out;
   padding: 10px 20px;
   background-color: #fff;
 }
-.articles-categories:hover {
+.articles-categories:hover, .articles-category:hover {
   background-color: black;
   color: #fff;
   // .articles-categories__img{box-shadow: 0px 0px 10px black;}

@@ -301,3 +301,83 @@ Qcategories.forEach(function(el, i, arr){
     }
   })
 })
+
+
+//COMUNITYCATEGORIES
+let subscribe = document.querySelectorAll(".subscribe-at-comunity");
+
+subscribe.forEach(function(el) {
+  el.addEventListener("click", () => {
+
+    if(el.classList.contains("subscribe-at-comunity__black")){
+    el.classList.remove("subscribe-at-comunity__black");
+    el.classList.add("subscribe-at-comunity__white");
+    }
+    else {
+    el.classList.add("subscribe-at-comunity__black");
+    el.classList.remove("subscribe-at-comunity__white");
+    }
+  })
+})
+
+//SCRIPT FOR LIKES
+
+let ArrLikes = document.querySelectorAll(".like-img");
+
+ArrLikes.forEach(function(el){
+  el.addEventListener("click", () => {
+  if (el.getAttribute("src") == "./images/dest/like/heart-icon-white.png") {
+      el.setAttribute("src", "./images/dest/like/heart-icon-black.png")
+  } else {
+    el.setAttribute("src", "./images/dest/like/heart-icon-white.png")
+  }
+  // el.setAttribute("src", "./images/dest/like/heart-icon-black.png");
+  // let likes = document.querySelector(".number-of-likes").innerHTML;
+  // document.querySelector(".number-of-likes").innerHTML = Number(likes) + 1;
+  })
+})
+
+
+//OWNER НАСТРОЙКА COMUNITY
+$("#plus-addPost").on("click", () => {
+  if($(".add-post-block").css("display") == "none"){
+    $(".add-post-block").css("display", "flex");
+    $(".comunitypage-title").css("marginBottom", "0");
+  } else {
+    $(".add-post-block").css("display", "none");
+    $(".comunitypage-title").css("marginBottom", "20px");
+  }
+})
+
+$(".plus-addPost__group").on("click", () => {
+  if($(".add-post-block").css("display") == "none"){
+    $(".add-post-block").css("display", "flex");
+    $(".comunitypage-title").css("marginBottom", "0");
+  } else {
+    $(".add-post-block").css("display", "none");
+    $(".comunitypage-title").css("marginBottom", "20px");
+  }
+})
+
+//ЗАГРУЗКА ИЗОБРАЖЕНИЯ ДЛЯ ПОСТА
+let inputIMG = document.querySelector("#files");
+let img = document.querySelector("#preview");
+//Вот нахуй три варианта, все делают одно и тоже я в шоке.
+
+//Ахуенная часть кода, нужно бы запомнить ее
+inputIMG.addEventListener("change", () => {
+  
+  const [file] = inputIMG.files
+  if(file) {
+    img.setAttribute("src", URL.createObjectURL(file))
+  }
+  $(".add-post__img").css("display", "block")
+})
+
+// $("#files").on("change", () => {
+//   console.log("Изменение")
+// })
+
+// inputIMG.onchange = () => {
+//   console.log("Изменение")
+// }

@@ -1,0 +1,16 @@
+.new-articles-image {
+  position: relative;
+  width: 450px;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.new-articles__rightblock {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
