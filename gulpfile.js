@@ -16,13 +16,15 @@ function browsersync(){
   })
 }
 
+// .pipe(uglify()) - это минификация я удалил ее нахер.
+
 function scripts() {
   return src([
-    'node_modules/jquery/dist/jquery.min.js', //Это подключение JQuery если не нужно можно удалить.
+    // 'node_modules/jquery/dist/jquery.min.js', //Это подключение JQuery если не нужно можно удалить.
     'app/js/app.js',
   ])
   .pipe(concat('app.min.js'))
-  .pipe(uglify())
+  // минификация была тут
   .pipe(dest('app/js/'))
   .pipe(browserSync.stream())
 }
