@@ -249,7 +249,7 @@ let settingsTitle = document.querySelector(".settings-title-text");
 
 //Блоки настроек:
 let Allsettings = $('.settingClass');
-let mainSettings = document.querySelector(".settings-block");
+let mainSettings = document.querySelector(".settings-block__general");
 let passwordSettings = document.querySelector(".settings-block__password");
 let groupdSettings = document.querySelector(".settings-block__group");
 let comunitydSettings = document.querySelector(".settings-block__comunity");
@@ -337,15 +337,13 @@ ArrLikes.forEach(function(el){
   })
 })
 
-
+//ОТКРЫТИЕ ПОЛЯ КОММЕНТАРИИ ПРИ НАЖАТИИ НА +
 //OWNER НАСТРОЙКА COMUNITY
-$("#plus-addPost").on("click", () => {
-  if($(".add-post-block").css("display") == "none"){
-    $(".add-post-block").css("display", "flex");
-    $(".comunitypage-title").css("marginBottom", "0");
+$("#plus-addAnswer").on("click", () => {
+  if($("#add-user-answer").css("display") == "none"){
+    $("#add-user-answer").css("display", "flex");
   } else {
-    $(".add-post-block").css("display", "none");
-    $(".comunitypage-title").css("marginBottom", "20px");
+    $("#add-user-answer").css("display", "none");
   }
 })
 

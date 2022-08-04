@@ -27,8 +27,8 @@
 }
 
 //СТИЛИ ДЛЯ БЛОКОВ НАСТРОЕК(КОТОРЫЕ БУДУТ ИСЧЕЗАТЬ И ПОЯВЛЯТЬСЯ)
-.settings-block {
-  display: none;
+.settings-block__general {
+  display: flex;
   flex-direction: column;
   padding: 10px 20px;
   background-color: #fff;
@@ -37,7 +37,7 @@
 }
 
 .settings-block__password {
-  display: flex;
+  display: none;
   flex-direction: column;
   padding: 10px 20px;
   background-color: #fff;
@@ -126,7 +126,6 @@
   font-family: 'Inter', sans-serif;
   font-size: 20px;
   color: $greytext;
-  padding: 10px;
   margin-bottom: 10px;
   &:focus {
     color: black;

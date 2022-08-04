@@ -48,6 +48,8 @@
 
 .answer-title {
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   h1 {font-size: 24px;}
 }
 
@@ -107,7 +109,8 @@
 
 .answer-comments {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px;
   background-color: #fff;
   margin: 20px 0;

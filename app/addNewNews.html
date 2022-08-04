@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/d2e262a151.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/main.min.css">
+  <title>Document</title>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="header-container">
+      <a href="./index.html">
+      <div class="logo">
+        white<span class="logo__small">:&lt;/code&gt;</span>
+      </div>
+      </a>
+      <div class="menu">
+        <a class="menu__el" href="./news.html" title="Новости"><img class="menu__img" src="./images/dest/menu/news-img-white.png" alt="Список"></a>
+        <a class="menu__el" href="./articles.html" title="Все статьи"><img class="menu__img" src="./images/dest/menu/articles-img-white.png" alt="Список"></a>
+        <a class="menu__el" href="./QandA.html" title="Вопросы и ответы"><img class="menu__img" src="./images/dest/menu/qa-img-white.png" alt="Список"></a>
+        <a class="menu__el" href="./comunity.html" title="Сообщество"><img class="menu__img" src="./images/dest/menu/community-img-white.png" alt="Список"></a>
+        <a class="menu__el" href="./login.html" title="Личный кабинет"><img class="menu__img" src="./images/dest/menu/profile-img-white.png" alt="Список"></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="back-container">
+      <a href="./articles.html">
+        <div class="articles-container__header">
+        <span class="articles-container__back"><i class="fa-solid fa-arrow-left"></i>Назад</span>
+        </div>
+      </a>
+      <div class="com-settings-title">
+        <p class="com-settings-title__text">
+          Добавить новость
+        </p>
+      </div>
+    </div>
+    
+<!-- all-information - внутри этого блока находиться часть которая располагается слева. И занимает 70% пространства
+после закрывающего div all-information идет часть которая располагается справа, маленькие блоки -->
+
+  <div class="main-container">
+    <div class="all-information">
+      <div class="add-new-publication">
+        <label for="" class="label-text">Заголовок</label><br>
+        <input id="" class="input-style" type="text" placeholder="Обязательно"><br>
+        <div class="settings-about-user">
+          <span class="settings-about-user__title">Текст</span>
+          <div class="settings-about-user__text">
+            <textarea class="setting-about-textarea otherstyle" placeholder="Захватывающий текст новостей..."></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="publication-themes">
+      <label for="" class="label-text">Темы новости</label>
+      <input id="" class="input-style input-other" type="password" placeholder="IT">
+      <input id="" class="input-style input-other" type="password" placeholder="Финансы">
+      <input id="" class="input-style input-other" type="password" placeholder="Развлечения">
+      <label for="" class="label-text margin-label">Баннер</label>
+      <label class="button-add-img margin-label" for="files">Прикрепить изображение</label>
+      <img class="add-post__img" id="preview" src="#" alt="Выберите изображение">
+      <input type="file" id="files" accept="image/jpeg,image/png" style="visibility:hidden">
+      <div class="button add-publication-button"><p>Добавить новость</p></div>
+    </div>
+  </div>
+  </main>
+
+  <footer>
+    <div class="footer-block">
+      <p>
+        Designed by <a class="makers-links" target="_blank" href="https://vk.com/zipa_zipa">Yuri Kuznetsov</a><br>
+        Developed by <a class="makers-links" target="_blank" href="https://vk.com/reeenooo">Renat Kurkin</a> & <a class="makers-links" target="_blank" href="https://vk.com/zipa_zipa">Yuri Kuznetsov</a>
+      </p>
+    </div>
+  </footer>
+
+<script src="./js/app.min.js"></script>
+</body>
+</html>
